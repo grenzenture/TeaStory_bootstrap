@@ -2,6 +2,10 @@
  	font-family: Century Gothic;
  	src:url('../fonts/Century Gothic.ttf');
  }
+  @font-face {
+ 	font-family: Century Gothic bold;
+ 	src:url('../fonts/Century Gothic_bold.ttf');
+ }
  @font-face {
  	font-family: Jura;
  	src:url('../fonts/Jura-Medium.ttf');
