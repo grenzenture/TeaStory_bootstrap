@@ -28,11 +28,11 @@ body {
 }
 
 .nav-link:hover {
-    color:  #a2a2a2 !important;
+	color:  #a2a2a2 !important;
 }
 
 .carousel-inner {
-	height: 620px;
+	height: 600px;
 	
 }
 
@@ -47,12 +47,57 @@ body {
 	content: "/";
 }
 
+.top-bar i {
+	font-size: 7pt;
+}
+
 .top-bar a {
-    color: #a2a2a2;
-    text-decoration: none;
+	color: #a2a2a2;
+	text-decoration: none;
 } 
 
 .top-bar a:hover {
-    color: #222222;
-    text-decoration: none;
+	color: #222222;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Century Gothic;
+	font-size: 23pt;
+	color: #222222;
+	text-align: center;
+}
+
+.underhead {
+	font-family: SourceCodePro-Regular;
+	font-size: 11pt;
+	color: #a2a2a2;
+	text-align: center;
+}
+
+.about-us {
+	text-align: left !important;
+	text-indent: 25px;
+}
+
+.card-body .container-fluid {
+	padding: 0px;
+	margin: 0px;
+
+}
+
+.badge {
+	/*font-size: 7pt;*/
+}
+
+.btn-info: {
+	/*color: #fff;
+	background-color: #138496;*/
+	border: none;
+}
+
+.btn-info:hover {
+	color: #fff;
+	background-color: #138496;
+	border-color: #117a8b;
 }
