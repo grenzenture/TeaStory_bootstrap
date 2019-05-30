@@ -203,8 +203,12 @@ h1 {
 	font-size: 30pt;
 }	
 
-.card-deck {
+.card {
 	margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
 }
 
 .footer .nav {
