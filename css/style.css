@@ -21,6 +21,10 @@ body {
 	height: 50px;
 }
 
+.navbar-brand img {
+	padding-left: 70px;
+}
+
 .nav-link {color: #222222 !important;}
 .nav-link:hover {color:  #a2a2a2 !important;}
 
@@ -180,10 +184,10 @@ h1 {
 	text-decoration: none;
 	color: #49c5b6;
 	border-color: #49c5b6;
-	}
+}
 
 .eye {
- 	margin-top: 30px;	
+	margin-top: 30px;	
 }
 
 .eye a{
@@ -193,10 +197,10 @@ h1 {
 
 .eye a:hover{
 	text-decoration: none;
-	}
+}
 
 .eye a i {
-	font-size: 35pt;
+	font-size: 30pt;
 }	
 
 .card-deck {
@@ -236,4 +240,6 @@ h1 {
 	color: #fff;
 	background-color:  #49c5b6;
 	border-color: #49c5b6;
-	}
+}
+
+
