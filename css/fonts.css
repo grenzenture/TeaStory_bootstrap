@@ -25,3 +25,13 @@
 	font-family: Verdana;
 	src:url('../fonts/Verdana.ttf');
 }
+
+@font-face {
+	font-family: SourceSansVariable;
+	src:url('../fonts/SourceSansVariable-Roman.otf');
+}
+
+@font-face {
+	font-family: SourceSans;
+	src:url('../fonts/Source Sans Pro.ttf');
+}

@@ -8,7 +8,6 @@ body {
 	font-family: Century Gothic;
 	font-size: 9pt;
 	color: #a2a2a2;
-
 }
 
 .iz {
@@ -20,20 +19,13 @@ body {
 	/*font-family: Century Gothic;*/
 	font-size: 9pt;
 	height: 50px;
-	
 }
 
-.nav-link {
-	color: #222222 !important;
-}
-
-.nav-link:hover {
-	color:  #a2a2a2 !important;
-}
+.nav-link {color: #222222 !important;}
+.nav-link:hover {color:  #a2a2a2 !important;}
 
 .carousel-inner {
-	height: 600px;
-	
+	height: 600px;	
 }
 
 .footer {
@@ -83,21 +75,118 @@ h1 {
 .card-body .container-fluid {
 	padding: 0px;
 	margin: 0px;
-
 }
 
-.badge {
-	/*font-size: 7pt;*/
-}
-
-.btn-info: {
-	/*color: #fff;
-	background-color: #138496;*/
-	border: none;
-}
-
-.btn-info:hover {
+.tag {
 	color: #fff;
-	background-color: #138496;
-	border-color: #117a8b;
+	font-size: 8pt;
+	padding: .2em .5em;
+}
+
+.tag:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.green-tea {background-color: #9abc22;}
+.green-tea:hover{background-color: #809b23;}
+
+.white-tea {background-color: #b7b59f;}
+.white-tea:hover{background-color: #97957f;}
+
+.oolong-tea {background-color: #d9b964;}
+.oolong-tea:hover{background-color: #bda25a;}
+
+.black-tea {background-color: #2baa9b;}
+.black-tea:hover{background-color: #56371f;}
+
+.red-tea {background-color: #904227;}
+.red-tea:hover{background-color: #602713;}
+
+.discount {background-color: #ff4e4e;}
+.discount:hover{background-color: #c73b3b;}
+
+.in-cart {
+	padding: .60em .8em;
+	/*font-size: 10pt;*/
+	color: #fff;
+	background-color: #49c5b6;
+	border-radius: 10rem;
+}
+
+.in-cart:hover{
+	background-color: #2baa9b;
+	color: #fff;
+	text-decoration: none;
+}
+
+.card-title {
+	/*font-family: SourceSansVariabl;*/
+	font-size: 12pt;
+	/*color: #a2a2a2;*/
+	margin-bottom: .50rem;
+}
+
+.card-text {
+	/*font-family: SourceCodePro-EL;*/
+	font-size: 9pt;
+	color: #a2a2a2;
+	margin-bottom: .50rem;
+}
+
+
+.price {
+	font-family: SourceCodePro-Regular;
+	font-size: 11pt;
+	color: #222222;
+}
+
+.price s {
+	color: #a2a2a2;
+}
+
+.ehover1 {
+	height: auto;
+}
+
+.in-fav {
+	margin-right: 20px;
+	margin-top: .80rem;	
+}
+
+.in-fav a{
+	padding: .40em .4em;
+	color: #fff;
+	background-color: transparent;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 1px;
+	border-radius: 10rem;
+}
+
+.in-fav a:hover{
+	text-decoration: none;
+	color: #49c5b6;
+	border-color: #49c5b6;
+	}
+
+.eye {
+ 	margin-top: 30px;	
+}
+
+.eye a{
+	color: #fff;
+	font-size: 9pt;
+}
+
+.eye a:hover{
+	text-decoration: none;
+	}
+
+.eye a i {
+	font-size: 35pt;
+}	
+
+.card-deck {
+	margin-bottom: 50px;
 }
