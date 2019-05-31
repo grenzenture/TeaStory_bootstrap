@@ -221,11 +221,11 @@ h1 {
 }
 
 .footer .nav {
-	margin: 20px;
+	margin: 1rem;
 }
 
 .footer .d-flex {
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 }
 
 .footer .d-flex i {
@@ -255,4 +255,19 @@ h1 {
 	border-color: #49c5b6;
 }
 
+.border-info {
+    border-color: #49c5b6 !important;
+}
+
+.btn-mint {
+    color: #fff;
+    background-color: #49c5b6;
+    border-color: #49c5b6;
+}
+
+.btn-mint:hover{
+    color: #fff;
+    background-color: #2baa9b;
+    border-color: #2baa9b;
+}
 
