@@ -116,6 +116,15 @@ h1 {
 .discount {background-color: #ff4e4e;}
 .discount:hover{background-color: #c73b3b;}
 
+.country-tea {background-color: #904227;}
+.country-tea:hover{background-color: #602713;}
+
+.packing-tea {background-color: #ff4e4e;}
+.packing-tea:hover{background-color: #c73b3b;}
+
+.year-tea {background-color: #ff4e4e;}
+.year-tea:hover{background-color: #c73b3b;}
+
 .in-cart {
 	padding: .60em .8em;
 	/*font-size: 10pt;*/
@@ -187,7 +196,7 @@ h1 {
 }
 
 .eye {
-	margin-top: 30px;	
+	margin-top: 10%;	
 }
 
 .eye a{
