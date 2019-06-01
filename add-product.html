@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="h-100">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://bootstraptema.ru/snippets/effect/2016/ihe/effects.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Добавление нового товара - TeaStory</title>
+	
+</head>
+<body class="d-flex flex-column h-100">
+
+	<!-- TOP BAR -->
+	<div class="container-fluid top-bar ">
+		<div class="row justify-content-between align-items-center border-bottom px-4 py-1">
+			<div class="col-sm-6"><i class="fas fa-map-marker-alt"></i> Доставка по Архангельску</div>
+			<div class="col-sm-6">
+				<span class="float-md-right"><i class="fas fa-phone"></i> 8 (926) 049 90 79 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Избранное</a></span>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse flex-lg-fill pl-3" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						КАТАЛОГ
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Чай</a>
+						<a class="dropdown-item" href="#">Посуда</a>
+						<a class="dropdown-item" href="#">Аксессуары</a>
+					</div>
+				</li>
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">БЛОГ</a>
+				</li>
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">ДОСТАВКА</a>
+				</li> 
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">КОНТАКТЫ</a>
+				</li>
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">АКЦИИ</a>
+				</li>
+			</ul>
+		</div>
+		
+		<a class="navbar-brand flex-lg-fill" href="#"><img src="img/logo.png" height="38" ></a>
+		
+		<div class="collapse navbar-collapse justify-content-md-end flex-lg-fill px-3 " id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item pr-2">
+					<!-- TODO: сделать выпадающий поиск jquery -->
+					<a class="nav-link " href="#"><i class="fas fa-search"></i></a>
+				</li>
+				<li class="nav-item pr-3">
+					<a class="nav-link " href="#"><i class="fas fa-shopping-cart"></i></a>
+				</li>
+				<li class="nav-item">
+
+					<a class="nav-link" href="#"><b>Вход</b></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="#"><b>Регистрация</b></a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<!-- ADD-PRODUCT-FORM -->
+		<div class="d-flex justify-content-center m-5">
+			<form class="data-edit-form">
+				<h5 class="mb-3">Добавление нового товара</h5>
+				<hr class="mb-4">
+
+				<div class="form-group row form-inline">
+					<label for="inputTitle" class="col-sm-4 col-form-label">Название</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="inputTitle" required="">
+					</div>
+				</div>
+
+				<div class="form-group row form-inline">
+					<label for="inputPrice" class="col-sm-4 col-form-label">Цена</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="inputPrice" required="">
+					</div>
+				</div>
+
+				<div class="form-group row form-inline">
+					<label class="col-sm-4 col-form-label" for="inputDiscription">Описание</label>
+					<div class="col-sm-8">
+						<textarea class="form-control" id="inputDiscription" rows="3"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group row form-inline">
+					<label for="inputSmallDiscription" class="col-sm-4 col-form-label">Маленькое описание</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="inputCountry" >
+					</div>
+				</div>
+
+				<div class="form-group row form-inline">
+					<label for="inputCountry" class="col-sm-4 col-form-label">Страна</label>
+					<div class="col-sm-8">
+						<select class="form-control form-control-sm" id="inputCountry">
+							<option>Small select dfcd</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row form-inline">
+					<label for="inputPacking" class="col-sm-4 col-form-label">Вид фасовки</label>
+					<div class="col-sm-8">
+						<select class="form-control form-control-sm" id="inputPacking">
+							<option>Small select dfcd</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row form-inline">
+					<label for="inputSortTea" class="col-sm-4 col-form-label">Сорт чая</label>
+					<div class="col-sm-8">
+						<select class="form-control form-control-sm" id="inputSortTea">
+							<option>Small select dfcd</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row form-inline">
+					<label for="File1" class="col-sm-4 col-form-label">Добавить изображение</label>
+					<div class="col-sm-8">
+						<input type="file" class="form-control-file" id="File1">
+					</div>	
+				</div>
+
+				<hr class="mb-4 mt-5">
+				<div class="form-group row">
+					<div class="col-sm-8">
+						<button class="btn btn-mint btn-lg" type="submit">Добавить товар</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer mt-auto py-3 border-top">
+	<div class="container">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link slash" href="#">ДОСТАВКА И ОПЛАТА</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link slash" href="#">БЛОГ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">СПОСОБЫ ЗАВАРИВАНИЯ</a>
+			</li>
+		</ul>
+	</div>
+	<div class="d-flex justify-content-center">
+		<a class="nav-link" href="#"><i class="fab fa-vk"></i> </a>
+		<a class="nav-link" href="#"><i class="fab fa-instagram px-4"></i></a>
+
+	</div>
+	<div class="d-flex justify-content-center">
+		<span class="text-muted pr-4">8 (926) 049 90 79</span>
+		<span class="text-muted pl-3">teastory@gmail.com</span>
+	</div>
+
+</footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
