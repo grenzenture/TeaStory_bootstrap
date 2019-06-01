@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="http://bootstraptema.ru/snippets/effect/2016/ihe/effects.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Вход</title>
+	<title>Личный кабинет</title>
 	
 </head>
 <body class="d-flex flex-column h-100">
@@ -81,35 +81,98 @@
 
 	<!-- EDIT-USER-DATA -->
 	<main>
-
-		<div class="container d-flex flex-column align-items-center">
+		<nav class=" d-flex justify-content-between mx-4 my-2">
 			
-			<h1 class="mt-5 mb-4">Личный кабинет</h1>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-			<div class="card" style="width: 19rem;">
-				<div class="card-body">
-					<form class="form-signin">
-						<label for="inputEmail" class="sr-only">Email address</label>
-						<input type="email" id="inputEmail" class="form-control mb-4" placeholder="Ваш email" required="" autofocus="">
-						<label for="inputPassword" class="sr-only">Password</label>
-						<input type="password" id="inputPassword" class="form-control mb-4" placeholder="Пароль" required="">
-						<div class="checkbox mb-3">
-							<label>
-								<input type="checkbox" value="remember-me"> Запомнить меня
-							</label>
+				<a class="nav-item nav-link" id="basic-info-tab" data-toggle="tab" href="#basic-info" role="tab" aria-controls="basic-info" aria-selected="false">Основная информация</a>
+
+				<a class="nav-item nav-link active" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">Редактировать профиль</a>
+
+				<a class="nav-item nav-link" id="delivery-address-tab" data-toggle="tab" href="#delivery-address" role="tab" aria-controls="delivery-address" aria-selected="false">Адрес доставки</a>
+
+				<a class="nav-item nav-link" id="order-history-tab" data-toggle="tab" href="#order-history" role="tab" aria-controls="order-history" aria-selected="false">История заказов</a>
+
+				<a class="nav-item nav-link" id="favourites-tab" data-toggle="tab" href="#favourites" role="tab" aria-controls="favourites" aria-selected="false">Избранное</a>
+			</div>
+			<div class="pr-3 pt-1"><h5>Личный кабинет</h5></div>
+		</nav>
+
+		<div class="tab-content" id="nav-tabContent">
+
+			<!-- EDIT-PROFILE-FORM -->
+			<div class="tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
+				<div class="d-flex justify-content-center m-5">
+					<form class="data-edit-form">
+						<h5 class="mb-3">Изменение личных данных</h5>
+						<hr class="mb-4">
+
+						<div class="form-group row form-inline">
+							<label for="inputEmail" class="col-sm-4 col-form-label">Ваш email</label>
+							<div class="col-sm-8">
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email" required="">
+							</div>
 						</div>
-						<button class="btn btn-lg btn-mint btn-block" type="submit">Войти</button>
-						
+
+						<div class="form-group row form-inline">
+							<label for="inputName" class="col-sm-4 col-form-label">Ваше имя</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="inputName" placeholder="Имя" required="">
+							</div>
+						</div>
+
+						<h5 class="mt-5 mb-0">Изменение пароля</h5>
+						<small class="text-muted">Если не хотите менять пароль - оставте эти поля пустыми</small>
+						<hr class="mb-4">
+
+						<div class="form-group row form-inline">
+							<label for="inputPassword" class="col-sm-4 col-form-label">Новый пароль</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" aria-describedby="passwordHelpInline" id="inputPassword" placeholder="Новый пароль">
+								<small id="passwordHelpInline" class="text-muted pl-2">
+									Не менее 6 символов.
+								</small>
+							</div>
+						</div>
+
+						<div class="form-group row form-inline">
+							<label for="inputPassword2" class="col-sm-4 col-form-label">Новый пароль еще раз</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" id="inputPassword2" placeholder="Новый пароль еще раз">
+							</div>
+						</div>
+
+						<div class="form-group row form-inline">
+							<label for="inputPassword3" class="col-sm-4 col-form-label">Текущий пароль</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" aria-describedby="passwordHelpInline2" id="inputPassword3" placeholder="Текущий пароль" required="">
+								<small id="passwordHelpInline2" class="text-muted pl-2">
+									Для подтверждения изменения данных.
+								</small>
+							</div>
+						</div>
+
+						<hr class="mb-4 mt-5">
+						<div class="form-group row">
+							<div class="col-sm-8">
+								<button class="btn btn-mint btn-lg" type="submit">Сохранить изменения</button>
+								<small class="text-muted">
+									<a  class="nav-link pl-0 pt-3" href="#">Удалить аккаунт</a>
+								</small>
+							</div>
+						</div>
 					</form>
 				</div>
-				<div class="card-footer" style="padding: 0.5rem;">
-					<small class="text-muted">
-						<a  class="nav-link" href="#">Зарегистрироваться</a>
-						<a class="nav-link" href="#">Забыли пароль?</a>
-					</small>
-				</div>
+
 			</div>
+
+			<!-- OTHER-TABS  -->
+			<div class="tab-pane fade" id="basic-info" role="tabpanel" aria-labelledby="basic-info-tab">Основнаяя информация</div>
+			<div class="tab-pane fade" id="delivery-address" role="tabpanel" aria-labelledby="delivery-address-tab">Адрес доставки</div>
+			<div class="tab-pane fade" id="order-history" role="tabpanel" aria-labelledby="order-history-tab">История заказов</div>
+			<div class="tab-pane fade" id="favourites" role="tabpanel" aria-labelledby="favourites-tab">Избранное</div>
 		</div>
+
 	</main>
 
 	<!-- FOOTER -->

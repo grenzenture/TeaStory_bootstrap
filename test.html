@@ -274,3 +274,53 @@
 
 </div>
 
+
+
+
+<form>
+	<div class="row">
+		<div class="col-4 mb-3 d-flex flex-column">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="email1">Email</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Ваш email" aria-describedby="email1" required>
+			</div>
+			<label for="inputEmail" class="mb-3">Ваш email</label>
+			
+			<label for="inputName" class="">Ваше имя</label>
+			
+		</div>
+		<div class="col-5 mb-3 d-flex flex-column">
+			<input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus="">
+			<input type="text" id="inputName" class="form-control" placeholder="Имя" required autofocus="" >
+		</div>
+	</div>
+	<h4 class="mb-3">Изменение пароля</h4>
+	<p class="mb-3">Если не хотите менять пароль - оставте эти поля пустыми</p>
+	<div class="row">
+		<div class="col-4 mb-3 d-flex flex-column">
+			<label for="inputPassword" class="">Новый пароль</label>
+			<label for="inputConfirmPassword" class="">Новый пароль еще раз</label>
+			<label for="inputCurrentPassword" class="">Текущий пароль</label>
+		</div>
+		<div class="col-5 mb-3 d-flex flex-column">
+			<small id="passwordHelpInline" class="text-muted">
+				Не менее 6 символов.
+			</small>
+			<input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpInline" placeholder="Пароль">
+			<input type="password" id="inputConfirmPassword" class="form-control"  aria-describedby="CurPasswordHelpInline" placeholder="Подтверждение пароля">
+			<small id="CurPasswordHelpInline" class="text-muted">
+				Для подтверждения изменения данных необходимо ввести ваш текущий пароль
+			</small>
+			<input type="password" id="inputCurrentPassword" class="form-control" placeholder="Текущий пароль" required>
+
+
+		</div>
+	</div>
+	<hr class="mb-4">
+	<button class="btn btn-mint btn-lg" type="submit">Сохранить изменения</button>
+	<small class="text-muted">
+		<a  class="nav-link" href="#">Удалить аккаунт</a>
+	</small>
+</form>
