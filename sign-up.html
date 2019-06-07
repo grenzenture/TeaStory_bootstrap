@@ -81,11 +81,8 @@
 
 	<!-- SIGN-UP -->
 	<main>
-
 		<div class="container d-flex flex-column align-items-center">
-			
 			<h1 class="mt-5 mb-4">Регистрация</h1>
-
 			<div class="card" style="width: 19rem;">
 				<div class="card-body">
 					<form class="form-signin needs-validation" novalidate>
@@ -100,11 +97,10 @@
 						<input type="password" id="inputPassword" class="form-control mb-4 pass" aria-describedby="passwordHelpInline" placeholder="Пароль" required>
 						<label for="inputConfirmPassword" class="sr-only">Password confirmation</label>
 						<input type="password" id="inputConfirmPassword" class="form-control mb-4 pass2" placeholder="Подтверждение пароля" required>
-						<div class="invalid-feedback ololo">
+						<div class="invalid-feedback chack">
 							Пароли не совпадают.
 						</div>
 						<button class="btn btn-lg btn-mint btn-block" type="submit">Зарегистрироваться</button>
-						
 					</form>
 				</div>
 				<div class="card-footer" style="padding: 0.5rem;">
@@ -145,13 +141,10 @@
 </div>
 
 <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
 	'use strict';
 	window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
     var validation = Array.prototype.filter.call(forms, function(form) {
     	form.addEventListener('submit', function(event) {
     		if (form.checkValidity() === false) {
@@ -164,38 +157,6 @@
 }, false);
 })();
 </script>
-
-<!-- <script>
-	(function() {
-		'use strict';
-		window.addEventListener('load', function() {
-			var pass = document.getElementsByClassName("pass").value;
-			var pass2 = document.getElementsByClassName("pass2").value;
-			var sub = document.getElementsByClassName("submit").value;
-			sub.addEventListener(function(event) {
-				if (pass != pass2) {
-					document.getElementsByClassName('ololo')[0].style.visibility = "visible"
-					// event.stopPropagation();
-				}
-				false;
-			}, false);
-		}, false);
-	})();
-</script>
-
-<script>
-	function passtest() {
-		var pass = document.getElementById("pass").value;
-		var pass2 = document.getElementById("pass2").value;
-		if (pass == pass2) 
-		{
-			exit;
-		} else {
-			document.getElementsByClassName('ololo')[0].style.visibility = "visible"
-			exit;
-		}
-	}
-</script> -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -1,29 +1,26 @@
 @import 'fonts.css';
+
 body {
 	background-color: #f1f1f1;
-	/*background-color: #f8f9fa;*/
 }
 
 .top-bar {
 	background-color: #fcfcfc;
-	/*font-family: Century Gothic;*/
 	font-size: 9pt;
 	color: #a2a2a2;
 }
 
-.iz {
-	text-align-last: center;
-}
-
 .navbar {
-	/*background-color: #fcfcfc;*/
-	/*font-family: Century Gothic;*/
 	font-size: 9pt;
 	height: 50px;
 }
 
 .navbar-brand img {
 	padding-left: 70px;
+}
+
+.iz {
+	text-align-last: center;
 }
 
 .nav-link {color: #222222 !important;}
@@ -61,14 +58,12 @@ body {
 }
 
 h1 {
-	/*font-family: Century Gothic;*/
 	font-size: 23pt;
 	color: #222222;
 	text-align: center;
 }
 
 .underhead {
-	/*font-family: SourceCodePro-Regular;*/
 	font-size: 11pt;
 	color: #a2a2a2;
 	text-align: center;
@@ -85,7 +80,6 @@ h1 {
 
 .card-body .container-fluid {
 	padding: 0px;
-	/*margin: 0px;*/
 }
 
 .tag {
@@ -128,7 +122,6 @@ h1 {
 
 .in-cart {
 	padding: .60em .8em;
-	/*font-size: 10pt;*/
 	color: #fff;
 	background-color: #49c5b6;
 	border-radius: 10rem;
@@ -141,14 +134,11 @@ h1 {
 }
 
 .card-title {
-	/*font-family: SourceSansVariabl;*/
 	font-size: 12pt;
-	/*color: #a2a2a2;*/
 	margin-bottom: .50rem;
 }
 
 .card-text {
-	/*font-family: SourceCodePro-EL;*/
 	font-size: 9pt;
 	color: #a2a2a2;
 	margin-bottom: .50rem;
@@ -162,7 +152,6 @@ h1 {
 
 
 .price {
-	/*font-family: SourceCodePro-Regular;*/
 	font-size: 11pt;
 	color: #222222;
 }
