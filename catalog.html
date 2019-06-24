@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html class="h-100">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://bootstraptema.ru/snippets/effect/2016/ihe/effects.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Catalog</title>
+	
+</head>
+<body class="d-flex flex-column h-100">
+
+	<!-- TOP BAR -->
+	<div class="container-fluid top-bar ">
+		<div class="row justify-content-between align-items-center border-bottom px-4 py-1">
+			<div class="col-sm-6"><i class="fas fa-map-marker-alt"></i> Доставка по Архангельску</div>
+			<div class="col-sm-6">
+				<span class="float-md-right"><i class="fas fa-phone"></i> 8 (926) 049 90 79 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Избранное</a></span>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse flex-lg-fill pl-3" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						КАТАЛОГ
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Чай</a>
+						<a class="dropdown-item" href="#">Посуда</a>
+						<a class="dropdown-item" href="#">Аксессуары</a>
+					</div>
+				</li>
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">БЛОГ</a>
+				</li>
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">ДОСТАВКА</a>
+				</li> 
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">КОНТАКТЫ</a>
+				</li>
+				<li class="nav-item pl-2">
+					<a class="nav-link" href="#">АКЦИИ</a>
+				</li>
+			</ul>
+		</div>
+		
+		<a class="navbar-brand flex-lg-fill" href="#"><img src="img/logo.png" height="38" ></a>
+		
+		<div class="collapse navbar-collapse justify-content-md-end flex-lg-fill px-3 " id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item pr-2">
+					<!-- TODO: сделать выпадающий поиск jquery -->
+					<a class="nav-link " href="#"><i class="fas fa-search"></i></a>
+				</li>
+				<li class="nav-item pr-3">
+					<a class="nav-link " href="#"><i class="fas fa-shopping-cart"></i></a>
+				</li>
+				<li class="nav-item">
+
+					<a class="nav-link" href="#"><b>Вход</b></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="#"><b>Регистрация</b></a>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+
+	<!-- FILTERS -->
+	<div class="container-fluid filters border-bottom justify-content-between">
+		<div class="row px-4 pt-4">
+			<div class="col">
+				<form>
+					<div class="form-group">
+						<ul class="navbar-nav flex-row">
+							<li class="nav-item dropdown pr-4">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Вид
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+										<label class="form-check-label" for="defaultCheck1">Красный</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+										<label class="form-check-label" for="defaultCheck2">Зеленый</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+										<label class="form-check-label" for="defaultCheck3">Белый</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+										<label class="form-check-label" for="defaultCheck4">Улун</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+										<label class="form-check-label" for="defaultCheck5">Пуэр</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+										<label class="form-check-label" for="defaultCheck6">Желтый</label>
+									</span>
+								</div>
+							</li>
+							<li class="nav-item dropdown pr-4">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Фасовка
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+										<label class="form-check-label" for="defaultCheck7">Рассыпной</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+										<label class="form-check-label" for="defaultCheck8">Прессованный</label>
+									</span>
+								</div>
+							</li>
+							<li class="nav-item dropdown pr-4">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Страна
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+										<label class="form-check-label" for="defaultCheck9">Китай</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+										<label class="form-check-label" for="defaultCheck10">Россия</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+										<label class="form-check-label" for="defaultCheck11">Индия</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+										<label class="form-check-label" for="defaultCheck12">Шриланка</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+										<label class="form-check-label" for="defaultCheck13">Япония</label>
+									</span>
+								</div>
+							</li>
+							<li class="nav-item dropdown pr-4">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Цена
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+										<label class="form-check-label" for="defaultCheck14">0 - 300&#8381</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+										<label class="form-check-label" for="defaultCheck15">300 - 500&#8381</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+										<label class="form-check-label" for="defaultCheck16">500 - 1000&#8381</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+										<label class="form-check-label" for="defaultCheck17">1000 - 1500&#8381</label>
+									</span>
+									<span class="dropdown-item-text">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+										<label class="form-check-label" for="defaultCheck18">1500&#8381+</label>
+									</span>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Ароматизация
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Ароматизированный</a>
+									<a class="dropdown-item" href="#">Без ароматизации</a>								
+								</div>
+							</li>
+							<button type="submit" class="btn btn-filtr ml-4 mr-3">Применить</button>
+							<button type="reset" class="btn btn-filtr">Очистить</button>
+						</ul>
+					</div>
+
+				</form>
+			</div>
+			<div class="col"><p class="float-md-right">
+				<select class="form-control form-control-sm" id="inputPacking">
+					<option>Рассыпной</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>	
+			</div>
+		</div>
+		<div class="row px-4">
+			<div class="col">
+				<div class="d-flex">
+					<a href="#" class="tag badge badge-pill white-tea tag-product">Белый</a>
+					<a href="#" class="tag badge badge-pill country-tea tag-product">Китай</a>
+					<a href="#" class="tag badge badge-pill packing-tea tag-product">Рассыпной</a>
+					<a href="#" class="tag badge badge-pill price-tea tag-product">до 300&#8381</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CATALOG -->
+	<div class="d-flex flex-column">
+		<main role="main" class="flex-shrink-0">
+			<div class="container">
+				<h1 class="m-4">Чай</h1>
+
+				<div class="d-flex flex-row flex-wrap justify-content-start">
+
+					<!-- Card -->
+					<div class="card mx-3">
+						<div class="hover ehover1">
+							<img src="img/item1.png" class="img-responsive card-img-top" alt="...">
+							<div class="overlay d-flex flex-column">
+								<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+								<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+							</div>
+						</div>	
+						<div class="card-body">
+							<h5 class="card-title">Бао Хао Инь Чжень</h5>
+							<p class="card-text">Серебрянные иглы</p>
+							<div class="container-fluid align-items-center">
+
+								<a href="#" class="tag badge badge-pill white-tea">Белый</a>
+								<a href="#" class="tag badge badge-pill discount">-30%</a>
+								<p class="float-right wt">50г</p>
+							</div>
+							<div>
+								<hr class="featurette-divider"></div>
+
+								<div class="container-fluid">
+									<span class="card-text price"><s>974₽</s> 681₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item2.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Да Хун Пао</h5>
+								<p class="card-text">Большой Красный Халат</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill oolong-tea">Улун</a>
+									<a href="#" class="tag badge badge-pill discount">-30%</a>
+									<p class="wt float-right">50г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price"><s>490₽</s> 345₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item3.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Тай Пин Хоу Куй</h5>
+								<p class="card-text">Главарь обезьян из Хоукена</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill green-tea">Зеленый</a>
+									<a href="#" class="tag badge badge-pill discount">-15%</a>
+									<p class="wt float-right">25г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price"><s>470₽</s> 400₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item4.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Те Гуань Инь №400</h5>
+								<p class="card-text">Железная богиня милосердия</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill oolong-tea">Улун</a>
+									<!-- <a href="#" class="tag badge badge-pill discount">-30%</a> -->
+									<p class="wt float-right">25г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price">148₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item1.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Бао Хао Инь Чжень</h5>
+								<p class="card-text">Серебрянные иглы</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill white-tea">Белый</a>
+									<a href="#" class="tag badge badge-pill discount">-30%</a>
+									<p class="wt float-right">50г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price"><s>974₽</s> 681₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item2.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Да Хун Пао</h5>
+								<p class="card-text">Большой Красный Халат</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill oolong-tea">Улун</a>
+									<a href="#" class="tag badge badge-pill discount">-30%</a>
+									<p class="wt float-right">50г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price"><s>490₽</s> 345₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item3.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Тай Пин Хоу Куй</h5>
+								<p class="card-text">Главарь обезьян из Хоукена</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill green-tea">Зеленый</a>
+									<a href="#" class="tag badge badge-pill discount">-15%</a>
+									<p class="wt float-right">25г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price"><s>470₽</s> 400₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item4.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Те Гуань Инь №400</h5>
+								<p class="card-text">Железная богиня милосердия</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill oolong-tea">Улун</a>
+									<p class="wt float-right">25г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price">148₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item1.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Бао Хао Инь Чжень</h5>
+								<p class="card-text">Серебрянные иглы</p>
+								<div class="container-fluid align-items-center">
+
+									<a href="#" class="tag badge badge-pill white-tea">Белый</a>
+									<a href="#" class="tag badge badge-pill discount">-30%</a>
+									<p class="float-right wt">50г</p>
+								</div>
+								<div><hr class="featurette-divider"></div>
+
+								<div class="container-fluid">
+									<span class="card-text price"><s>974₽</s> 681₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item2.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Да Хун Пао</h5>
+								<p class="card-text">Большой Красный Халат</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill oolong-tea">Улун</a>
+									<a href="#" class="tag badge badge-pill discount">-30%</a>
+									<p class="wt float-right">50г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price"><s>490₽</s> 345₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+						<!-- Card -->
+						<div class="card mx-3">
+							<div class="hover ehover1">
+								<img src="img/item3.png" class="img-responsive card-img-top" alt="...">
+								<div class="overlay d-flex flex-column">
+									<div class="in-fav"><a href="#" class="float-right badge">В избранное</a></div>
+									<div class="eye"><a href="#"><i class="fas fa-eye"></i><p>Подробнее</p></a></div>
+								</div>
+							</div>	
+							<div class="card-body">
+								<h5 class="card-title">Тай Пин Хоу Куй</h5>
+								<p class="card-text">Главарь обезьян из Хоукена</p>
+								<div class="container-fluid">
+									<a href="#" class="tag badge badge-pill green-tea">Зеленый</a>
+									<a href="#" class="tag badge badge-pill discount">-15%</a>
+									<p class="wt float-right">25г</p>	
+								</div>
+								<hr class="featurette-divider">
+								<div class="container-fluid">
+									<span class="card-text price"><s>470₽</s> 400₽</span>
+									<a href="#" class="in-cart float-right badge">В корзину</a>							
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="button d-flex justify-content-center"><a href="#" class="badge">Перейти в каталог</a></div>
+				<hr class="featurette-divider">
+
+				<div class="container main-block">
+					<h1 class="my-4">О компании</h1>
+					<p class="underhead about-us mb-4">У нас вы можете купить китайский чай в Москве или заказать его с доставкой в регионы России. Магазин TeaStore образовался в результате многолетнего увлечения чаем и его культурой. Наша цель — делать хороший китайский чай доступным, тем самым способствуя его распространению. Каждый год в течении трёх месяцчев мы проезжаем весь Китай в поисках чая и подбора ассортимента. Отсутствие цепочки посредников, отработанная логистика в Россию, знание рынка, умение подбирать чай, оптимизация арендных площадей и рабочего пространства в Москве, автоматизация внутренних процессов, создание условий хранения – всё это даёт возможность предлагать вам лучшую цену на китайский чай высочайшего качества.</p>	
+				</div>
+			</main>
+
+			<!-- FOOTER -->
+			<footer class="footer mt-auto py-3 border-top">
+				<div class="container">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link slash" href="#">ДОСТАВКА И ОПЛАТА</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link slash" href="#">БЛОГ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">СПОСОБЫ ЗАВАРИВАНИЯ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a class="nav-link" href="#"><i class="fab fa-vk"></i> </a>
+					<a class="nav-link" href="#"><i class="fab fa-instagram px-4"></i></a>
+
+				</div>
+				<div class="d-flex justify-content-center">
+					<span class="text-muted pr-4">8 (926) 049 90 79</span>
+					<span class="text-muted pl-3">teastory@gmail.com</span>
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	</body>
+	</html>
