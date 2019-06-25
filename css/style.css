@@ -231,7 +231,7 @@ h1 {
 
 .button a{
 	font-size: 10pt;
-	padding: .80em .5em;
+	padding: .80em .90em;
 	color: #222222;
 	background-color: transparent;
 	border-style: solid;
@@ -319,16 +319,16 @@ textarea {
 }
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #49c5b6;
-    border-color: #49c5b6;
+	color: #fff;
+	background-color: #49c5b6;
+	border-color: #49c5b6;
 }
 
 
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
-   color: #fff;
-    background-color: #49c5b6;
-    border-color: #49c5b6;
+	color: #fff;
+	background-color: #49c5b6;
+	border-color: #49c5b6;
 }
 
 .btn-bay {
@@ -372,14 +372,14 @@ textarea {
 	font-size: 9pt;
 }
 .dropdown-item.active, .dropdown-item:active {
-    background-color: #f8f9fa;
-    color: #222;
+	background-color: #f8f9fa;
+	color: #222;
 }
 .filters .dropdown-item-text {
 
-    display: block;
-    padding: 0rem 1.5rem;
-    color: #212529;
+	display: block;
+	padding: 0rem 1.5rem;
+	color: #212529;
 }
 .filters .dropdown-menu {
 	min-width: 8rem;
@@ -400,4 +400,38 @@ textarea {
 	background-color: #2baa9b;
 	color: #fff;
 	text-decoration: none;
+}
+
+.select-arrow {
+	position: absolute;
+	top: 1.48em;
+	right: 1.5em;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	border-style: solid;
+	border-width: .33em .33em 0 .33em;
+	border-color: #222222 transparent transparent transparent;
+}
+
+.select select {
+	text-align: right;
+	cursor: pointer;
+	padding: 10px 15px;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: #f8f9fa;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.page-link {
+    color: #222222;
+    background-color: #f1f1f1;
+}
+
+.page-link:hover {
+    color: #222222;
 }
