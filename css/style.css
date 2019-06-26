@@ -479,13 +479,13 @@ textarea {
 .delivery {
 	background: url(../img/teapot.png);
 	box-shadow:0 0 0 100em rgba(0, 0, 0, 0.3) inset;
-	padding-bottom: 7rem;
+	padding-bottom: 5rem;
 }
 
 .delivery h1 {
 	color: #e2e2e2;
-	margin-top: 3rem;
-	margin-bottom: 5rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 	font-size: 32px;
 }
 .delivery a {
