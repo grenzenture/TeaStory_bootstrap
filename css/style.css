@@ -428,10 +428,50 @@ textarea {
 }
 
 .page-link {
-    color: #222222;
-    background-color: #f1f1f1;
+	color: #222222;
+	background-color: #f1f1f1;
 }
 
 .page-link:hover {
-    color: #222222;
+	color: #222222;
+}
+
+.contacts {
+	background: url(../img/coffe-cup.png);
+	box-shadow:0 0 0 100em rgba(11, 34, 57, 0.6) inset;
+	padding-bottom: 7rem;
+	
+}
+
+.contacts h1 {
+	color: #e2e2e2;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+	font-size: 32px;
+}
+
+
+.gradient-stick {
+	height: .3em;
+	width: 40rem;
+	background: radial-gradient(40% 50%, #e2e2e2, transparent);
+	margin-top: 1.5rem;
+}
+
+.contacts-info {
+	color: #e2e2e2;
+	text-align: left;
+	width: 20rem;
+}
+
+.contacts-info p{
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.contacts-info h5{
+	margin: 1.5rem 0;
+	font-size: 21px;
+	font-weight: 600;
 }
