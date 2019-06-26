@@ -475,3 +475,49 @@ textarea {
 	font-size: 21px;
 	font-weight: 600;
 }
+
+.delivery {
+	background: url(../img/teapot.png);
+	box-shadow:0 0 0 100em rgba(0, 0, 0, 0.3) inset;
+	padding-bottom: 7rem;
+}
+
+.delivery h1 {
+	color: #e2e2e2;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+	font-size: 32px;
+}
+.delivery a {
+	color: #04833A;
+	text-decoration: none;
+}
+
+.delivery a:hover{
+	color: #6c757d;
+}
+
+.delivery-info {
+	color: #e2e2e2;
+	text-align: left;
+	width: 30rem;
+}
+
+.delivery-info p{
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.delivery-info h5{
+	margin: 1.5rem 0;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.gradient-stick-delivery {
+	height: .3em;
+	width: 50rem;
+	background: radial-gradient(40% 50%, #e2e2e2, transparent);
+	margin-top: 1.5rem;
+}
