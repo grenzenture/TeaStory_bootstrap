@@ -521,3 +521,9 @@ textarea {
 	background: radial-gradient(40% 50%, #e2e2e2, transparent);
 	margin-top: 1.5rem;
 }
+
+table img {
+	width: 80px;
+	height: 80px;
+}
+
