@@ -123,7 +123,7 @@ h1 {
 .price-tea {background-color: #b95396;}
 .price-tea:hover{background-color: #954178;}
 
-.in-cart {
+/*.in-cart {
 	padding: .60em .8em;
 	color: #fff;
 	background-color: #49c5b6;
@@ -134,7 +134,7 @@ h1 {
 	background-color: #2baa9b;
 	color: #fff;
 	text-decoration: none;
-}
+}*/
 
 .card-title {
 	font-size: 12pt;
@@ -331,7 +331,7 @@ textarea {
 	border-color: #49c5b6;
 }
 
-.btn-bay {
+/*.btn-bay {
 	padding: .80em;
 	font-size: 10pt;
 	color: #fff;
@@ -344,7 +344,7 @@ textarea {
 	color: #fff;
 	text-decoration: none;
 }
-
+*/
 
 .descript-p h4 {
 	font-size: 1.5em;
@@ -566,4 +566,35 @@ table img {
 
 .page-link:focus {
     box-shadow: none;
+}
+
+
+.in-cart {
+	padding: .2em .8em;
+	color: #fff;
+	background-color: #49c5b6;
+	border-radius: 10rem;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.in-cart:hover{
+	background-color: #2baa9b;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-bay {
+	padding: .6em;
+	font-size: 10pt;
+	color: #fff;
+	background-color: #49c5b6;
+	border-radius: 10rem;
+	font-weight: 700;
+}
+
+.btn-bay:hover{
+	background-color: #2baa9b;
+	color: #fff;
+	text-decoration: none;
 }
