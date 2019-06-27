@@ -484,7 +484,7 @@ textarea {
 
 .delivery h1 {
 	color: #e2e2e2;
-	margin-top: 2rem;
+	margin-top: 3rem;
 	margin-bottom: 3rem;
 	font-size: 32px;
 }
@@ -525,5 +525,45 @@ textarea {
 table img {
 	width: 80px;
 	height: 80px;
+	margin-right: 1em;
 }
 
+.table-item-line {
+	text-align: left;
+}
+
+.cart-footer > div{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align:center;
+	font-size: 13pt;
+}
+
+.btn-as-link:hover {
+	text-decoration: none;
+	color: #b2b2b2!important;
+}
+
+.btn-as-link {
+	font-size: 11pt;
+	padding-left: 1em;
+	padding-right: .3em;
+}
+
+ .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.card-header-cart {
+	font-size: 17pt;
+}
+
+.page-link:focus {
+    box-shadow: none;
+}

@@ -81,60 +81,68 @@
 
 	<!-- CART -->
 	<main>
-		<h1 class="my-4">Корзина</h1>
-		<div class="mx-5">
+		<nav class=" d-flex justify-content-center my-4">
+			
+			<div><h4>Корзина</h4></div>
+		</nav>
+		<!-- <h1 class="my-5">Корзина</h1> -->
+		<div class="m-4">
 
 			<div class="card">
 				
-
 				<div class="card-body">
-					<table class="table table-hover table-borderless">
-						<thead>
+					<table class="table table-hover text-center">
+						<thead class="table-borderless">
 							<tr>
-								<th scope="col">Наименование</th>
-								<th scope="col">Цена, руб</th>
+								<th scope="col" class="table-item-line"></th>
 								<th scope="col">Количество</th>
-								<th scope="col">Сумма, руб</th>
+								<th scope="col">Цена, руб</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>
+								<td class="table-item-line">
 									<img src="img/item1.png">
 									<span>Цимэнь Сун Чжень</span>
 								</td>
 								<td>200</td>
 								<td>Otto</td>
-								<td>200</td>
 							</tr>
 							<tr>
-								<td>
+								<td class="table-item-line">
 									<img src="img/item2.png">
 									<span>Цимэнь Сун Чжень</span>
 								</td>
 								<td>200</td>
 								<td>Otto</td>
-								<td>200</td>
 							</tr>
 							<tr>
-								<td>
+								<td class="table-item-line">
 									<img src="img/item3.png">
 									<span>Цимэнь Сун Чжень</span>
 								</td>
 								<td>200</td>
 								<td>Otto</td>
-								<td>200</td>
 							</tr>
+
 							<tr>
-								<td colspan="3">Итого</td>
+								<td class="table-item-line">
+									<img src="img/item3.png">
+									<span>Цимэнь Сун Чжень</span>
+								</td>
 								<td>200</td>
+								<td>Otto</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 
-				<div class="card-footer text-muted">
-					<button class="btn btn-xs btn-mint float-right mr-4">Оформить заказ</button>
+				<div class="card-footer bg-transparent cart-footer">
+					<button class="btn btn-xs text-muted my-3 btn-as-link">Продолжить покупки</button>
+					<button class="btn btn-xs text-muted my-3 btn-as-link">Очистить корзину</button>
+					<button class="btn btn-mint float-right mx-4 my-3 btn-order">Оформить заказ</button>
+					<div class="float-right"><span class="mr-2">Сумма заказа:</span><span class="mr-3">500р</span></div>
+					
 				</div>
 			</div>
 
