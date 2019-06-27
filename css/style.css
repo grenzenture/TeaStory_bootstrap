@@ -437,9 +437,10 @@ textarea {
 }
 
 .contacts {
-	background: url(../img/coffe-cup.png);
+	background: url(../img/coffe-cup1.png);
 	box-shadow:0 0 0 100em rgba(11, 34, 57, 0.6) inset;
 	padding-bottom: 7rem;
+	background-position: right;
 	
 }
 
@@ -477,9 +478,10 @@ textarea {
 }
 
 .delivery {
-	background: url(../img/teapot.png);
-	box-shadow:0 0 0 100em rgba(0, 0, 0, 0.3) inset;
+	background: url(../img/china.png);
+	box-shadow:0 0 0 100em rgba(0, 0, 0, 0.6) inset;
 	padding-bottom: 5rem;
+	background-position: center;
 }
 
 .delivery h1 {
